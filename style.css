@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#head{
+    /* font-style: italic; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:800;
+    font-size:3.6em;
+    text-shadow:  6px 2px 7px rgb(245, 240, 240);
+}
+body{
+    background:linear-gradient(to left, rgb(174, 174, 221),rgb(120, 173, 204));
+}
+.container{
+    background:linear-gradient(to right,#e7d8c0,#f7969475);  
+    margin: 100px auto;
+    width: 800px;
+    padding: 3rem 2rem ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 40px 2px rgb(10, 10, 10);
+    cursor:pointer;
+    /* transform:translate(20px); */
+}
+
+.container h1{
+    font-size: 3rem;
+}
+.currency-section{
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+}
+.currency-section input{
+    /* background-color: rgba(187, 152, 54, 0.384); */
+    background: transparent;
+    border: none;
+    padding-right: 8px;
+    text-align: center;
+    outline: none;
+    font-size: 1rem;
+    border-right: 1px solid #ccc;
+    height: 36px;
+    border-radius: 7px;
+}
+.ram{
+    border: 2px solid black;
+    border-radius: 7px;
+}
+.to-currency .from-currency{
+    background-color: rgba(136, 204, 204, 0.555);
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    outline: none;
+    text-align: center;
+
+    /* font-size: 1rem; */
+    border-right: 1px solid #ccc;
+}
+.currency-section{
+    border:none;
+    box-shadow: 2px 2px 30px 2px black;
+    background: transparent;
+  
+}
+.currency-section select{
+    border: 2px solid;
+    outline: none;
+    padding: 10px 20px 10px 10px;
+    font-size: 1rem;
+    text-align: right;
+    /* background-color: #4286be75; */
+    background: transparent;
+    border-radius: 7px;
+    
+}
+.swap{
+    padding: 10px;
+    border-radius: 12px 5px;
+    background-color: aquamarine;
+    font-size: 1rem;
+    
+}
+.rate-container p{
+    text-align: center ;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.rate-container h2{
+    text-align: center;
+    font-size: 1.5  rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
