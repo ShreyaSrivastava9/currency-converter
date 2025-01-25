@@ -2,20 +2,113 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    
 }
+.oleo-script-regular {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .oleo-script-bold {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
 #head{
     /* font-style: italic; */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
     font-weight:800;
     font-size:3.6em;
     text-shadow:  6px 2px 7px rgb(245, 240, 240);
 }
-body{
-    background:linear-gradient(to left, rgb(174, 174, 221),rgb(120, 173, 204));
+body {
+    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #8fd3f4);
+    background-size: 800% 800%;
+    animation: gradientBackground 12s ease infinite;
+    font-family: "Oleo Script", cursive;
 }
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.currency-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.currency-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.swap {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.swap:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    transform: translateY(-3px);
+}
+
+.rate-container {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444;
+    margin-top: 1rem;
+}
+  
+
 .container{
-    background:linear-gradient(to right,#e7d8c0,#f7969475);  
+    /*background:linear-gradient(to right,#e7d8c0,#f7969475);  */
+    background-color:white;
     margin: 100px auto;
     width: 800px;
     padding: 3rem 2rem ;
@@ -44,8 +137,13 @@ body{
     align-items: center;
     border: 2px solid black;
 }
+.currency-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
 .currency-section input{
-    /* background-color: rgba(187, 152, 54, 0.384); */
+    /* background-color: rgba(187, 152, 54, 0.384); 
     background: transparent;
     border: none;
     padding-right: 8px;
@@ -68,7 +166,7 @@ body{
     outline: none;
     text-align: center;
 
-    /* font-size: 1rem; */
+    /* font-size: 1rem; 
     border-right: 1px solid #ccc;
 }
 .currency-section{
@@ -83,11 +181,11 @@ body{
     padding: 10px 20px 10px 10px;
     font-size: 1rem;
     text-align: right;
-    /* background-color: #4286be75; */
+    /* background-color: #4286be75; 
     background: transparent;
     border-radius: 7px;
     
-}
+}*/
 .swap{
     padding: 10px;
     border-radius: 12px 5px;
@@ -99,6 +197,7 @@ body{
     text-align: center ;
     margin-bottom: 10px;
     font-size: 1rem;
+    font-family: "Oleo Script", cursive;
 }
 .rate-container h2{
     text-align: center;
